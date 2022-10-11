@@ -7,3 +7,11 @@
  *
  * 3. Выведите значение последней переменной в консоль
  */
+
+
+const first = 20;
+const second = 110;
+
+const multi = first * second;
+
+console.log(multi);
