@@ -28,4 +28,3 @@ const mySurname = 'Stashchuk'
  * комментарий
  */
 
-5 + 2
