@@ -10,3 +10,14 @@
  *
  * 5. Перепишите функцию так, чтобы результат возвращался неявно
  */
+
+const fn9 = () => {
+    return "Hi, World"
+}
+console.log(fn9());
+
+
+
+const fn9_1 = () => "Hi, World2";
+console.log(fn9_1());
+
