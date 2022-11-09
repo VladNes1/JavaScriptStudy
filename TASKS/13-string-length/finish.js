@@ -4,3 +4,10 @@
  *
  * 2. Виведите в консоль длину этой строки
  */
+
+
+const mySport = "football";
+
+const stringLength = mySport.length;
+
+console.log(stringLength);
