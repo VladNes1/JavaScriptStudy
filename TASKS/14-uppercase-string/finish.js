@@ -13,7 +13,7 @@
  * 5. Выведите в консоль значение второй переменной
  */
 
-const mySeason = "summer";
+const mySeason = "summer"
 console.log(mySeason instanceof String)
 console.log(typeof mySeason);
 
