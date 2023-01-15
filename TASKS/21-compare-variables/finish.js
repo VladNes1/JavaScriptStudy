@@ -10,8 +10,17 @@ let myVariable1 = 10
 let myVariable2 = '5'
 
 // Напишите код здесь
+// вариант 1 конвертации в число
+console.log(typeof parseInt(myVariable2));
+
+// вариант 2 конвертации в число
+console.log(typeof +myVariable2);
+
+console.log(parseInt(myVariable1) <= parseInt(myVariable2));
+
 
 myVariable1 = '20'
 myVariable2 = 100
-
 // Напишите код здесь
+
+console.log(parseInt(myVariable1) <= parseInt(myVariable2));
