@@ -12,3 +12,21 @@
  * "Сообщение номер 4"
  * "Сообщение номер 5"
  */
+
+// function showInfo() {
+//     for (let i = 1; i <= 5; i++) {
+//         console.log("Сообщение номер " + i)
+//     }
+// }
+//
+// setTimeout(showInfo, 2000)
+
+let sms = 1;
+const messageID = setInterval(()=> {
+    console.log("Сообщение номер " + sms++)
+}, 2000)
+
+
+setTimeout(() => {
+    clearInterval(messageID)
+}, 11000);
