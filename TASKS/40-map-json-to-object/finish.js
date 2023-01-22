@@ -18,6 +18,7 @@ const postsJSON = [
 
 console.log(postsJSON);
 
+// const postsJS = postsJSON.map((post) => JSON.parse(post));
 const postsJS = postsJSON.map(JSON.parse);
 
 console.log(postsJS);
