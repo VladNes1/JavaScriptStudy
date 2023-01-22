@@ -41,4 +41,6 @@ cars.push({
     price: 80,
     isAvailableForSale: false
 });
+
 console.log(cars);
+console.log(cars.length);
