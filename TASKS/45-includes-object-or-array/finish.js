@@ -21,6 +21,17 @@ const fruits = [
   { title: 'Apple', quantity: 25 },
 ]
 
+const isElementInArray = (searchElement, inputArray) => {
+  if (typeof searchElement !== 'object') {
+    return inputArray.includes(searchElement)
+  }
+
+  return inputArray
+      .map((element) => JSON.stringify(element))
+      .includes(JSON.stringify(searchElement))
+}
+
+
 const primitiveTypesArray = [25, 'x', true, undefined, null]
 
 console.log(isElementInArray(['css', 'flexbox'], tags)) // true
