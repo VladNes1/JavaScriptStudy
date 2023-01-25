@@ -6,22 +6,32 @@
  * у которых количество комментариев не меньше "minimalComentsQty"
  */
 
+const popularPostsIds = (posts, minimalComentsQty) => {
+    return posts.reduce((postIds, post) => {
+        if (post.comments >= minimalComentsQty) {
+           return postIds.concat([post.postId])
+        } else {
+            return postIds
+        }
+    }, [])// [] - второй аргумент метода reduce
+}
+
 const inputPosts = [
-  {
-    title: 'Как быстро выучить JavaScript?',
-    postId: 3421,
-    comments: 25,
-  },
-  {
-    title: 'Где используется JavaScript?',
-    postId: 5216,
-    comments: 3,
-  },
-  {
-    title: 'Какая разница между React и Angular?',
-    postId: 8135,
-    comments: 12,
-  },
+    {
+        title: 'Как быстро выучить JavaScript?',
+        postId: 3421,
+        comments: 25,
+    },
+    {
+        title: 'Где используется JavaScript?',
+        postId: 5216,
+        comments: 3,
+    },
+    {
+        title: 'Какая разница между React и Angular?',
+        postId: 8135,
+        comments: 12,
+    },
 ]
 
 console.log(popularPostsIds(inputPosts, 10)) // [3421, 8135]
