@@ -11,7 +11,7 @@ const minMax = (...nums) => {
     return [Math.min(...nums), Math.max(...nums)]
 }
 
-let min, max
+let min, max;
 /* Вызовите здесь функцию "minMax" с аргументами 24, 5, 34, 10 
 и используя деструктуризацию массивов присвойте значения переменным "min" и "max" */
 [min, max] = minMax(24, 5, 34, 10);
