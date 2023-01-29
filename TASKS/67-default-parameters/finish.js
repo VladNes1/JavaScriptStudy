@@ -8,9 +8,8 @@
  * для параметра mult в "multiplyBy"
  */
 
-function multiplyBy(a, mult) {
-  mult = mult !== undefined ? mult : 2
-  console.log(a * mult)
+function multiplyBy(a, mult = 2) {
+   console.log(a * mult)
 }
 
 multiplyBy(2)
