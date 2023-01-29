@@ -14,8 +14,9 @@ function myFn1(a) {
 }
 
 function myFn2(a) {
-  let c = 5
-  console.log(a, b, c, d)
+  let c = 5;
+  console.log(a, b, c, d);
+  //a - undefined
 }
 
-myFn1()
+myFn1();
