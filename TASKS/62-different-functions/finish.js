@@ -7,6 +7,7 @@
  * 3. Также вызовите обе функции
  */
 
+// можна вызвать до обявления и перезаписать ее
 function firstFunction(a, b) {
   return a + b
 }
@@ -14,3 +15,4 @@ function firstFunction(a, b) {
 const secondFunction = function (a, b) {
   return a + b
 }
+
