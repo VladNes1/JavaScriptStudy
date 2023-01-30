@@ -27,6 +27,18 @@ const person2 = {
   },
 }
 
+const shortPerson = (person) => {
+  const {
+    name: n,
+    postsQuantity: p = 0,
+    info: {
+      country: c,
+      age: a,
+    },
+    } = person;
+  return {n, c, a, p}
+}
+
 // Напишите функцию "shortPerson" здесь
 
 console.log(shortPerson(person1))
