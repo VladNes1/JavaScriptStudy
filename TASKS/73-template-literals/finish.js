@@ -12,8 +12,8 @@ const cars = [
   { brand: 'Rolls-Royce', price: 120000 },
 ]
 
-const carInfo = (cars) => {
-  const {brand, price} = cars;
+const carInfo = (car) => {
+  const {brand, price} = car;
   // if (price <= 20000) {
   //   return `Цена автомобиля ${brand} - ${price}$ и это дешёвая машина`
   // }
