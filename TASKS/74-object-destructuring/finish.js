@@ -35,6 +35,7 @@ const shortPerson = (person) => {
       country: c,
       age: a,
     },
+
     } = person;
   return {n, c, a, p}
 }
