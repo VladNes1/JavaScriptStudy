@@ -8,7 +8,10 @@ const a = [1, 2, 3]
 
 // Напишите код здесь
 
-const b = [...a];
+// const b = [...a];
+
+const b = JSON.parse(JSON.stringify(a)); //глубокое копирование - можна использовать для обектов
+
 
 b.push('newElement')
 
